@@ -78,5 +78,59 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
+
+    <script>
+       $('#carousel-example-1').on('slide.bs.carousel', function (e) {
+    /*
+        CC 2.0 License Iatek LLC 2018 - Attribution required
+    */
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 5;
+    var totalItems = $('#carousel-example-1 .carousel-item').length;
+ 
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('#carousel-example-1 .carousel-item').eq(i).appendTo('#carousel-example-1 .carousel-inner');
+            }
+            else {
+                $('#carousel-example-1 .carousel-item').eq(0).appendTo('#carousel-example-1 .carousel-inner');
+            }
+        }
+    }
+});
+
+/*
+    Carousel Cards
+*/
+$('#carousel-example-2').on('slide.bs.carousel', function (e) {
+    /*
+        CC 2.0 License Iatek LLC 2018 - Attribution required
+    */
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 4;
+    var totalItems = $('#carousel-example-2 .carousel-item').length;
+  
+ 
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('#carousel-example-2 .carousel-item').eq(i).appendTo('#carousel-example-2 .carousel-inner');
+            }
+            else {
+                $('#carousel-example-2 .carousel-item').eq(0).appendTo('#carousel-example-2 .carousel-inner');
+            }
+        }
+    }
+});
+
+    </script>
+
   </body>
 </html>
