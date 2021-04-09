@@ -1,2 +1,2 @@
 
-https://dmitriy-1986.github.io/repo-Bootstrap-crousel/
+https://dmitriy-1986.github.io/repo-Bootstrap-carousel/
