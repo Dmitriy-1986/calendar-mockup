@@ -7,7 +7,7 @@ body {
   background-color: #e66053;
   color: #4E4F4A;
   display: flex;
-  align-items: center;
+ /* align-items: center;*/
   justify-content: center;
   font-family: "Montserrat";
   font-weight: 700;
