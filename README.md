@@ -1,2 +1,2 @@
 
-https://dmitriy-1986.github.io/repo-Bootstrap-carousel/
+https://dmitriy-1986.github.io/calendar-mockup/
